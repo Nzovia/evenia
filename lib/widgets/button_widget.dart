@@ -5,6 +5,7 @@ class ButtonWidget extends StatelessWidget {
   final String text;
   final VoidCallback onClicked;
 
+
   const ButtonWidget({Key? key, required this.text, required this.onClicked})
       : super(key: key);
 
@@ -14,7 +15,7 @@ class ButtonWidget extends StatelessWidget {
     color: Colors.white10,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(10.0),
-      side: BorderSide(color: Colors.blueGrey)
+      side: const BorderSide(color: Colors.blueGrey)
     ),
     padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
     child: Text(

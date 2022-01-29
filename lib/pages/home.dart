@@ -213,7 +213,7 @@ class _HomeState extends State<Home> {
                               Align(
                                 alignment: Alignment.topLeft,
                                 child: Text(
-                                  "Music Jamming Outdor",
+                                  "Music Jamming Outdoor",
                                   style: TextStyle(
                                       fontSize: 20,
                                       fontWeight: FontWeight.w500,
