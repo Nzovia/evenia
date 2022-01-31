@@ -41,7 +41,7 @@ class _HomeState extends State<Home> {
     List ucomingEvents = [
       {
         "image": "assets/pangung.jpeg",
-        "title": "Panggung Samenjak Internet",
+        "title": "Panggung Samenjak",
         "time": "January 19 2022"
       },
       {
@@ -68,8 +68,7 @@ class _HomeState extends State<Home> {
       body: Container(
         // height: size.height,
         child: Padding(
-            padding: const EdgeInsets.fromLTRB(
-                12,48,12,12),
+            padding: const EdgeInsets.fromLTRB(12, 48, 12, 12),
             child: SingleChildScrollView(
               child: Column(
                 children: <Widget>[
@@ -99,19 +98,19 @@ class _HomeState extends State<Home> {
                             ]),
                         Align(
                           alignment: Alignment.centerRight,
-                        child:  Container(
-                          margin: const EdgeInsets.all(12),
-                          padding: const EdgeInsets.all(12),
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            border: Border.all(width: 2, color: Colors.grey),
+                          child: Container(
+                            margin: const EdgeInsets.all(12),
+                            padding: const EdgeInsets.all(12),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100),
+                              border: Border.all(width: 2, color: Colors.grey),
+                            ),
+                            child: const Icon(
+                              Icons.notifications,
+                              size: 32,
+                              color: Colors.grey,
+                            ),
                           ),
-                          child: const Icon(
-                            Icons.notifications,
-                            size: 32,
-                            color: Colors.grey,
-                          ),
-                        ),
                         )
                       ]),
                   const SizedBox(
@@ -140,7 +139,11 @@ class _HomeState extends State<Home> {
                     child: ListView(
                       scrollDirection: Axis.horizontal,
                       children: ucomingEvents.map((e) {
-                        return buildCard(e['image'], e['title'], e['time']);
+                        return buildCard(
+                          e['image'],
+                          e['title'],
+                          e['time'],
+                        );
                       }).toList(),
                     ),
                   ),
@@ -148,29 +151,68 @@ class _HomeState extends State<Home> {
                     height: 24,
                   ),
 
-
                   //Scrolling options from left right
                   SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          ButtonWidget(text: "All", onClicked: () {}),
+                          ButtonWidget(
+                            text: "All",
+                            onClicked: () {},
+                            btnColor: Color(0xFFE0F2F1),
+                            shapeBorder: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: const BorderSide(
+                                    color: Colors.transparent)),
+                          ),
                           const SizedBox(
                             width: 8.0,
                           ),
-                          ButtonWidget(text: "Music", onClicked: () {}),
+                          ButtonWidget(
+                            text: "Music",
+                            onClicked: () {},
+                            btnColor: Color(0xFFE0F2F1),
+                            shapeBorder: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: const BorderSide(
+                                    color: Colors.transparent)),
+                          ),
                           const SizedBox(
                             width: 8.0,
                           ),
-                          ButtonWidget(text: "Trading", onClicked: () {}),
+                          ButtonWidget(
+                            text: "Trading",
+                            onClicked: () {},
+                            btnColor: Color(0xFFE0F2F1),
+                            shapeBorder: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: const BorderSide(
+                                    color: Colors.transparent)),
+                          ),
                           const SizedBox(
                             width: 8.0,
                           ),
-                          ButtonWidget(text: "Technology", onClicked: () {}),
+                          ButtonWidget(
+                            text: "Technology",
+                            onClicked: () {},
+                            btnColor: Color(0xFFE0F2F1),
+                            shapeBorder: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: const BorderSide(
+                                    color: Colors.transparent)),
+                          ),
                           const SizedBox(
                             width: 8.0,
                           ),
-                          ButtonWidget(text: "Engineering", onClicked: () {}),
+                          ButtonWidget(
+                            text: "Engineering",
+                            onClicked: () {},
+                            btnColor: Color(0xFFE0F2F1),
+                            shapeBorder: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10.0),
+                                side: const BorderSide(
+                                    color: Colors.transparent)),
+                          ),
                           const SizedBox(
                             width: 8.0,
                           ),
@@ -256,22 +298,16 @@ class _HomeState extends State<Home> {
   Widget buildCard(var image, var title, var time) => Padding(
         padding: const EdgeInsets.all(8.0),
         child: Stack(children: [
-            ClipRRect(
-              borderRadius: BorderRadius.circular(10),
-              child: GestureDetector(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderDetails()),);
-                },
-              child: Image.asset(
-                //items.urlImage,
-                image,
-                fit: BoxFit.cover,
-                height: 280,
-                width: 210,
-              ),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(10),
+            child: Image.asset(
+              //items.urlImage,
+              image,
+              fit: BoxFit.cover,
+              height: 280,
+              width: 210,
             ),
           ),
-
           Container(
             height: 280,
             width: 210,
@@ -280,13 +316,51 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.all(8.0),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    title,
-                    style: const TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w500,
-                        color: Colors.white),
+                  FractionallySizedBox(
+                    widthFactor:0.58,
+                   child: FlatButton(
+                        onPressed: () {},
+                        color: Color(0x1AFFFFFF),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(50.0),
+                            side: const BorderSide(color: Color(0x1AFFFFFF))),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: const <Widget>[
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Icon(
+                                Icons.location_on,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.center,
+                              child: Text(
+                                "Malang",
+                                style:
+                                TextStyle(color: Colors.white, fontSize: 16),
+                              ),
+                            ),
+                          ],
+                        )),
+                  ),
+
+                  const SizedBox(
+                    height: 8,
+                  ),
+                  Row(
+                    children: [
+                      Text(
+                        title,
+                        style: const TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.white),
+                      ),
+                    ],
                   ),
                   const SizedBox(
                     height: 8,
@@ -303,7 +377,7 @@ class _HomeState extends State<Home> {
                 ],
               ),
             ),
-          )
+          ),
         ]),
       );
 }

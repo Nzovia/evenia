@@ -83,8 +83,8 @@ class _OrderDetailsState extends State<OrderDetails> {
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            ClipRect(
-                // borderRadius: BorderRadius.circular(10),
+            ClipRRect(
+                 borderRadius: BorderRadius.circular(10),
                 child: Image.asset(
               "assets/pangung.jpeg",
               height: 180,
@@ -127,7 +127,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                 Align(
                   alignment: Alignment.centerLeft,
                   child: Container(
-                    margin: const EdgeInsets.all(12),
+                    margin: const EdgeInsets.fromLTRB(12,12, 0,12),
                     padding: const EdgeInsets.all(8),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(100),
@@ -231,7 +231,12 @@ class _OrderDetailsState extends State<OrderDetails> {
             Container(
               height: 51,
                width: 350,
-               child: ButtonWidget(text: "CheckOut", onClicked: (){})
+               child: ButtonWidget(text: "CheckOut", onClicked: (){},
+                   shapeBorder: RoundedRectangleBorder(
+                       borderRadius: BorderRadius.circular(50.0),
+                       side: const BorderSide(color: Colors.transparent)
+                   ),
+               btnColor: Colors.green,)
             ),
 
           ],

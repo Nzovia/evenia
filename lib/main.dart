@@ -1,7 +1,5 @@
 
 import 'package:evenia/pagemanager.dart';
-import 'package:evenia/pages/home.dart';
-import 'package:evenia/pages/order_detail.dart';
 import 'package:flutter/material.dart';
 
 void main() {

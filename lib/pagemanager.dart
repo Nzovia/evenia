@@ -33,7 +33,8 @@ class _PageManagerState extends State<PageManager> {
         bucket: bucket,
       ),
       floatingActionButton: FloatingActionButton(
-        child: const Icon(Icons.stop_circle_rounded),
+        child: const Icon(Icons.stop_circle_rounded, color: Colors.grey,),
+        backgroundColor: Colors.white,
         onPressed: () {
           Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderDetails()),);
         },
