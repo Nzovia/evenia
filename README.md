@@ -1,6 +1,5 @@
 # evenia
 
-A# milao
 
 Evenia Flutter project.
 
@@ -16,7 +15,7 @@ Link to the Dribble Design
 
 <p float ="left">
   
-  <img src="https://user-images.githubusercontent.com/52350637/152660529-33a89e68-071c-451a-aafd-9ed163894c63.jpg" width="200"/>
+  <img src="https://user-images.githubusercontent.com/52350637/152660529-33a89e68-071c-451a-aafd-9ed163894c63.jpg" hspace="20" width="200"/>
 <img src = "https://user-images.githubusercontent.com/52350637/152660534-93a0d1cd-0332-4c78-a12a-80af44f61027.jpg" width="200"/>
   
 </p>
