@@ -16,7 +16,7 @@ Link to the Dribble Design
 <p float ="left">
   
   
-  <img src="https://user-images.githubusercontent.com/52350637/153016267-afe7d09b-51b9-41cb-99be-a29c01fbd66b.jpg" hspace="20" width="200"/>
+  <img src="https://user-images.githubusercontent.com/52350637/153016267-afe7d09b-51b9-41cb-99be-a29c01fbd66b.jpg" width="200"/>
   <img src="https://user-images.githubusercontent.com/52350637/152660529-33a89e68-071c-451a-aafd-9ed163894c63.jpg" hspace="20" width="200"/>
 <img src = "https://user-images.githubusercontent.com/52350637/152660534-93a0d1cd-0332-4c78-a12a-80af44f61027.jpg" width="200"/>
   
