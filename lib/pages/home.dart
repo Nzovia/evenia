@@ -287,7 +287,7 @@ class _HomeState extends State<Home> {
                         ),
                       ],
                     ),
-                  )
+                  ),
                 ],
               ),
             )),
@@ -382,14 +382,4 @@ class _HomeState extends State<Home> {
       );
 }
 
-class CardItem {
-  final String urlImage;
-  final String title;
-  final String subtitle;
 
-  CardItem({
-    required this.urlImage,
-    required this.title,
-    required this.subtitle,
-  });
-}
