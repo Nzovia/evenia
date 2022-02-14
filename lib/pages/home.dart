@@ -11,29 +11,6 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
-  //All cards list
-  // List<CardItem> items = [
-  //   CardItem(
-  //     urlImage: 'assets/pangung.jpeg',
-  //     title: "Panggung Samenjak Internet",
-  //     subtitle: '"January 19 2022"',
-  //   ),
-  //   CardItem(
-  //     urlImage: 'assets/pangung.jpeg',
-  //     title: "Panggung Samenjak Internet",
-  //     subtitle: '"January 19 2022"',
-  //   ),
-  //   CardItem(
-  //     urlImage: 'assets/pangung.jpeg',
-  //     title: "Panggung Samenjak Internet",
-  //     subtitle: '"January 19 2022"',
-  //   ),
-  //   CardItem(
-  //     urlImage: 'assets/pangung.jpeg',
-  //     title: "Panggung Samenjak Internet",
-  //     subtitle: '"January 19 2022"',
-  //   )
-  // ];
 
   @override
   Widget build(BuildContext context) {
